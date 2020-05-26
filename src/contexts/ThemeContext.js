@@ -20,6 +20,7 @@ export class ThemeContextProvider extends Component {
     })
   }
   render () {
+    console.log({ ...this.state, toggleTheme: this.toggleTheme })
     return (
       <ThemeContext.Provider
         value={{ ...this.state, toggleTheme: this.toggleTheme }}
