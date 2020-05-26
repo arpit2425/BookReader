@@ -2,14 +2,14 @@ import React, { Component, createContext } from 'react'
 export const ThemeContext = createContext()
 export class ThemeContextProvider extends Component {
   state = {
-    isLight: true,
+    isLight: false,
     light: {
       syntax: '#555',
       ui: '#ddd',
       bg: '#eee'
     },
     dark: {
-      syntax: '#eee',
+      syntax: '#ddd',
       ui: '#333',
       bg: '#555'
     }
